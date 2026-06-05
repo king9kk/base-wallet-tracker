@@ -37,4 +37,4 @@ function renderBarChart(data) {
   }).join('');
 
   container.innerHTML = `
-    <div class="c
+    <div class="chart-card card''>
