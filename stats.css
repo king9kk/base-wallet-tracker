@@ -1,0 +1,138 @@
+/* Stats, Charts & Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-group {
+  margin-bottom: 24px;
+}
+
+.timeline-date {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  position: absolute;
+  left: -20px;
+  top: 4px;
+  border: 2px solid var(--bg);
+}
+
+.timeline-item.failed .timeline-dot {
+  background: #ff3d00;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.timeline-type { font-weight: 600; }
+.timeline-value { color: var(--primary); }
+.timeline-address { color: var(--muted); }
+.timeline-time { color: var(--muted); font-size: 11px; }
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.leaderboard-item.active {
+  background: rgba(0, 82, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.rank { font-size: 18px; min-width: 32px; }
+.lb-address { flex: 1; color: var(--muted); }
+.lb-balance { color: var(--primary); font-weight: 600; }
+.lb-txcount { color: var(--muted); font-size: 12px; }
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.contact-name { font-weight: 600; }
+.contact-address { color: var(--muted); font-size: 12px; }
+.contact-note { color: var(--muted); font-size: 11px; font-style: italic; }
+
+.contact-actions { display: flex; gap: 8px; }
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.icon-btn:hover { background: var(--border); }
+.icon-btn.red:hover { background: rgba(255, 61, 0, 0.1); }
+
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.qr-address {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 12px;
+}
