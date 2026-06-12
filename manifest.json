@@ -1,0 +1,49 @@
+{
+  "name": "Base Wallet Tracker",
+  "short_name": "BaseTracker",
+  "description": "Track your Base network wallet, tokens, NFTs and transactions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0b0d",
+  "theme_color": "#0052ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "utilities"],
+  "screenshots": [
+    {
+      "src": "screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "url": "/?page=dashboard",
+      "description": "View wallet dashboard"
+    },
+    {
+      "name": "Transactions",
+      "url": "/?page=transactions",
+      "description": "View transaction history"
+    },
+    {
+      "name": "Portfolio",
+      "url": "/?page=portfolio",
+      "description": "View portfolio value"
+    }
+  ]
+}
