@@ -1,0 +1,73 @@
+/* Print Styles */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+  }
+
+  .navbar {
+    background: #ffffff !important;
+    border-bottom: 2px solid #000;
+    padding: 12px 0;
+  }
+
+  .navbar h1 {
+    color: #0052ff !important;
+  }
+
+  .connect-btn,
+  .refresh-btn,
+  .theme-toggle,
+  #sidebar,
+  .toast,
+  .modal-overlay,
+  #onboarding-tooltip,
+  #shortcuts-help,
+  #install-btn {
+    display: none !important;
+  }
+
+  .main-content {
+    margin-left: 0 !important;
+  }
+
+  .card {
+    border: 1px solid #ddd !important;
+    background: #fff !important;
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+
+  .tx-item {
+    border-bottom: 1px solid #eee !important;
+  }
+
+  .balance-amount {
+    color: #0052ff !important;
+  }
+
+  a {
+    color: #0052ff !important;
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #888;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  @page {
+    margin: 2cm;
+    size: A4;
+  }
+}
